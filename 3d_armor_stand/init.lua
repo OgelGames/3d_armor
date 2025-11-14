@@ -166,7 +166,7 @@ local function register_armor_stand(def)
 		drawtype = "mesh",
 		mesh = "3d_armor_stand.obj",
 		tiles = {def.texture},
-		use_texture_alpha = "clip",
+		use_texture_alpha = minetest.features.use_texture_alpha_string_modes and "clip",
 		paramtype = "light",
 		paramtype2 = "facedir",
 		walkable = false,
